@@ -6,7 +6,7 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `forestFriendsGifts`,
+    title: `Shopify + Gatsby + Netlify`,
     description: `Kick off your next, ecommerce experience with this Gatsby starter. This starter ships with credentials to a shopify demo store so you can try it out immediately.`,
     author: `todd`,
   },
