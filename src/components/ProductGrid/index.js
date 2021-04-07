@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 
 import StoreContext from '~/context/StoreContext'
-import { Grid, Product, Title, PriceTag } from './styles'
+import { Grid, Product, Title, Title2, PriceTag } from './styles'
 import { Img } from '~/utils/styles'
 
 const ProductGrid = () => {
@@ -18,13 +18,14 @@ const ProductGrid = () => {
               id
               title
               handle
+              description
               createdAt
               images {
                 id
                 originalSrc
                 localFile {
                   childImageSharp {
-                    fluid(maxWidth: 910) {
+                    fluid(maxWidth: 310) {
                       ...GatsbyImageSharpFluid_withWebp_tracedSVG
                     }
                   }
@@ -56,6 +57,7 @@ const ProductGrid = () => {
               id,
               handle,
               title,
+              description,
               images: [firstImage],
               variants: [firstVariant],
             },
@@ -70,6 +72,10 @@ const ProductGrid = () => {
                 )}
               </Link>
               <Title>{title}</Title>
+              <Title2>
+                <em>{description}</em>
+              </Title2>
+
               <PriceTag>{getPrice(firstVariant.price)}</PriceTag>
             </Product>
           )

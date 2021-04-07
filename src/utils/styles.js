@@ -16,6 +16,7 @@ export const GlobalStyle = props => (
     styles={css`
       body {
         margin: 0;
+        background-color: whitesmoke;
       }
       html {
         font-family: sans-serif;
@@ -27,7 +28,7 @@ export const GlobalStyle = props => (
 )
 
 export const Img = styled(Image)`
-  max-width: 100 %;
+  max-width: 100%;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -63,7 +64,7 @@ export const GridRight = styled.div`
 `
 
 export const MainContent = styled.main`
-  margin-top: 80px;
+  margin-top: 480px;
   margin-bottom: 40px;
 
   @media (max-width: ${breakpoints.l}px) {

@@ -22,6 +22,13 @@ export const Title = styled.span`
   font-weight: 300;
   font-size: 1.2rem;
   text-align: center;
+ 
+`
+export const Title2 = styled.span`
+  font-weight: 300;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
 `
 
 export const PriceTag = styled.span`
