@@ -29,7 +29,7 @@ export const MenuLink = styled(Link)`
 `
 
 export const CartCounter = styled.span`
-  background-color: white;
+  background-color: black;
   color: #663399;
   border-radius: 20px;
   padding: 0 10px;
