@@ -18,7 +18,7 @@ export const Container = styled.div`
 `
 
 export const MenuLink = styled(Link)`
-  color: green;
+  color: gray;
   text-decoration: none;
   font-size: 2rem;
   font-weight: bold;
